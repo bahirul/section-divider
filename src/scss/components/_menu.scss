@@ -1,0 +1,28 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(51, 116, 238);
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 100;
+    transition: opacity 350ms ease;
+}
+
+.menu[data-show="true"] {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+}
