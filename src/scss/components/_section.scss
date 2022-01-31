@@ -7,12 +7,18 @@ section {
     padding: min(20vh, 100px) min(10vh, 30px);
 }
 
+// fix svg generated issue
+.svg {
+    width: calc(100% + 2px);
+    max-width: calc(100% + 2px);
+    margin-left: -1px;
+}
 
 .section__tilt-divider {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
@@ -110,11 +116,11 @@ section {
 }
 
 .section__spacer {
-    aspect-ratio: 960/100;
+    margin-top: -1px;
+    aspect-ratio: 980/100;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
 }
 
 .section__spacer-flip{

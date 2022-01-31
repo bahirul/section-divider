@@ -17,6 +17,10 @@
     opacity: 1;
 }
 
+.menu__list {
+    padding-left: 0;
+}
+
 .menu ul {
     display: flex;
     justify-content: space-between;
